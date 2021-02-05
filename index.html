@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex</title>
+    <style type="text/css" media="all">
+        #ptag {
+            width: 100%;
+            min-height: 200px;
+            border: 2px dashed black;
+            box-sizing: border-box;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body onload="setup()">
+
+    <section class="">
+        <h1>XMLHttpRequest</h1>
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Date</td>
+                        <td>Phone</td>
+                        <td>Amount</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div>
+                <label for="search">Search</label>
+                <input type="search" name="search" oninput="search(this.value)" id="search" value="" />
+            </div>
+            <p class="bg" id="ptag">
+            </p>
+        </div>
+    </section>
+
+
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
